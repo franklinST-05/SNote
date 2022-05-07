@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	>
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Login</title>
+	
+</h:head>
+<h:body>
+
+	<h:outputStylesheet name="primeicons/primeicons.css" library="primefaces" />
+	<h:outputStylesheet library="css"  name="style.css"/>
+	<h:outputStylesheet library="css" name="login.css" rendered="true"/>
+	
+
+	<div id="contentForm">
+		<h:graphicImage id="imgApresentation" library="images" name="Startuplifepana.svg" />
+			
+		<h:form id="loginForm">
+			<div>
+				<h1>Login</h1>
+
+				<div class="ui-inputgroup">
+					<span class="ui-inputgroup-addon ui-guid"><i class="pi pi-envelope"></i></span>
+					<p:inputText class="ui-input" placeholder="Email" type="email" required="true"/>
+				</div>
+
+				<div class="ui-inputgroup">
+					<span class="ui-inputgroup-addon ui-guid"><i class="pi pi-key"></i></span>
+					<p:inputText class="ui-input" placeholder="Senha" type="password" required="true"/>
+				</div>
+				
+				<h:commandButton value="Login" class="btn-round btn-login" />
+				<h:commandLink  class="link-forgout-account">
+					Esqueceu a <span>senha</span> ?
+				</h:commandLink>
+			</div>
+			
+			<p:button type="button" class="btn-round btn-create-account" value="Criar Nova Conta" icon="pi pi-arrow-right" href="./newaccount.xhtml" iconPos="right" />
+
+		</h:form>
+		
+	</div>
+
+</h:body>
+</html>
