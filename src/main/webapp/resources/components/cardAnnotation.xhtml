@@ -1,0 +1,39 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:composite="http://java.sun.com/jsf/composite">
+<composite:interface>
+	<composite:attribute name="title" shortDescription="title for annotation" required="true" />
+	<composite:attribute name="description" shortDescription="description for annotation" required="true" />
+	<composite:attribute name="opened" shortDescription="initalize modal opened?" required="false" />
+</composite:interface>
+
+<composite:implementation>
+	<h:outputStylesheet library="components" name="css/cardAnnotation.css" rendered="true" />
+	
+	
+	
+
+	
+	<div class="card-note">
+			<div class="card-note-header">
+				<h:outputText class="card-note-title" value="#{cc.attrs.title}" />
+				<h:form>
+					<p:growl id="messages" showDetail="true" />
+
+					<p:menuButton icon="pi pi-ellipsis-h" id="action-more">
+						<p:menuitem value="Editar" action="#{menuView.pencil}"
+							update="messages" icon="pi pi-pencil" />
+							<p:menuitem value="Mover para Lixeira" action="#{menuView.save}"
+							update="messages" icon="pi pi-trash" />
+					</p:menuButton>
+				</h:form>
+			</div>
+			<h:outputText class="card-note-description" value="#{cc.attrs.description}" />
+	</div>
+	
+	
+		
+</composite:implementation>
+</html>

@@ -1,0 +1,40 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:composite="http://java.sun.com/jsf/composite">
+<composite:interface />
+<composite:implementation>
+
+	<h:outputStylesheet library="components" name="css/sidebar.css" rendered="true" />
+	<div id="contentsidebar">
+		<div id="sidebar">
+			<div class="content">
+				<h:graphicImage library="images" name="logo-white.png" />
+			</div>
+
+			<div class="content">
+				<button title="Inicio">
+					<h:graphicImage library="images" name="icons/home.svg"/>
+				</button>
+				
+				
+				<button title="Lixeira">
+					<h:graphicImage library="images" name="icons/trash-2.svg"/>
+				</button>
+				<button title="Ajuda">
+					<h:graphicImage library="images" name="icons/help-circle.svg"/>
+				</button>
+			</div>
+
+			<div class="content">
+				<button title="Sair">
+					<h:graphicImage library="images" name="icons/log-out.svg"/>
+				</button>
+			</div>
+
+		</div>
+	</div>
+
+</composite:implementation>
+</html>

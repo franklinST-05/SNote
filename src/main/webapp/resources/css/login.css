@@ -4,7 +4,9 @@
 body {
 	background-image: linear-gradient(65.27deg, #8000FF 4.79%, #DB00FF 100%);
 	background-repeat: no-repeat;
-	background-position: center; background-size : cover; display : flex;
+	background-position: center; 
+	background-size : cover; 
+	display : flex;
 	align-items: center;
 	justify-content: center;
 	min-height: 100vh;
