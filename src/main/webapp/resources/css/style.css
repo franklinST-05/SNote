@@ -6,22 +6,23 @@
 	font-family: "Inter";
 }
 
-body {
-	min-height: 200vh;
-}
-
 #main {
-	padding: 10px 10px;
+	padding: 10px 15px;
 	box-sizing: border-box;
 	float: right;
 	width: calc(100% - 70px);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
-	gap: 10px;
+	position: relative;
 }
 
+#main #contentCards {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	flex-wrap: wrap;
+	gap: 10px;
+	padding-left: 10px;
+
+}
 
 .btn-add-annotation {
 	width: 200px;
@@ -36,6 +37,11 @@ body {
 	border: none;
 	font-size: 15px;
 	font-weight: 500;
+	box-shadow: none;
+}
+
+.btn-add-annotation:hover {
+	box-shadow: none;
 }
 
 .btn-add-annotation .ui-button-icon-left{

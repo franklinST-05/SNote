@@ -6,10 +6,9 @@
 <composite:interface>
 	<composite:attribute name="title" shortDescription="title for annotation" required="true" />
 	<composite:attribute name="description" shortDescription="description for annotation" required="true" />
-	<composite:attribute name="opened" shortDescription="initalize modal opened?" required="false" />
 </composite:interface>
-
 <composite:implementation>
+	<h:outputStylesheet library="css" name="style.css" rendered="true" />
 	<h:outputStylesheet library="components" name="css/cardAnnotation.css" rendered="true" />
 	
 	

@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+body {
+	background: #f5f5f5;	
+}
+
+body::-webkit-scrollbar {
+	display: none;
+}
+
+#root {
+	width: 100%;
+	max-width: 800px;
+	height: 100%;
+	position: relative;
+	margin: 0px auto;
+	background: #fff;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+#head {
+	width: 100%;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	box-sizing: border-box;
+}
+
+#head button, #head input[type="submit"], #head input[type="button"] {
+	width: 100px;
+	height: 100%;
+	border: none !important;
+	outline: none;
+	background: transparent;
+	box-shadow: none;
+	text-shadow: none;
+	font-size: 18px;
+	font-weight: 400;
+	display: flex;
+	align-items: center;
+}
+
+#inTitle, #inDescription {
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	background: transparent;
+	font-size: 18px;
+}
+
+#inTitle {
+	text-align: center;
+}
+
+#inDescription {
+	padding: 20px 20px;
+	box-sizing: border-box;
+	height: calc(100vh - 50px);
+	resize: none;
+}
+
+#inDescription::-webkit-scrollbar {
+	width: 6px;
+	border-radius: 10px;
+}
+
+#inDescription::-webkit-scrollbar-thumb {
+	width: 6px;
+	border-radius: 10px;
+	background: #f5f5f5;
+}
+
+
+#inTitle, #inTitle::placeholder, #inDescription, #inDescription::placeholder
+	{
+	color: grey;
+	transition: 0.3s;
+}
+
+#inTitle:focus, #inDescription:focus{
+	color: black;
+}

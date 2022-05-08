@@ -9,23 +9,34 @@
 <h:head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<link rel="shortcut icon" type="image/x-icon" href="#{request.contextPath}/resources/images/favicon.png" />
-	<title>Home</title>
+	<title>Sobre</title>
 </h:head>
 <h:body>
 	<h:outputStylesheet name="primeicons/primeicons.css" library="primefaces" />
 	<h:outputStylesheet library="css" name="style.css" />
 
-	<p:commandButton value="Nova Anotação" icon="pi pi-plus" class="btn-add-annotation" />
-
 	<cc:sidebar />
 	<div id="main">
-		<cc:headerRoute title="Inicio"/>
-		<div id="contentCards">
-			<cc:cardAnnotation title="Curso JSF" description="terminar atividade de JSF"/>
-			<cc:cardAnnotation title="Redes de computadores" description="Assistir curso de Redes "/>
-			<cc:cardAnnotation title="Redes de computadores" description="Assistir curso de Redes "/>
+		<cc:headerRoute title="Sobre"/>
+		<p style="padding-left: 15px; font-size: 15px; color: grey;">Olá, sou Franklin aluno da escola profissionalizante Rita Aguiar Barbosa. <br/> Sou apaixonado por programação e pretendo abrangir muito mais meus conhecimentos dentro da area.</p>
+		
+		<div id="contentImages">
+			<h:graphicImage url="https://github-readme-stats.vercel.app/api?username=franklinST-05"/>
+			<h:graphicImage url="https://github-readme-stats.vercel.app/api/top-langs/?username=franklinST-05"/>
 		</div>
 	</div>
+	
+	<style>
+		#contentImages {
+			display: flex;
+			align-items: center;
+			justify-content: end;
+			gap: 10px;
+			margin-top: 130px;
+		}
+	</style>
+
+	
 
 </h:body>
 </html>
